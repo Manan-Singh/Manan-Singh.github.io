@@ -110,8 +110,8 @@ section.external_sites .github{
 section.external_sites .linkedIn{
     margin-top: 50px;
     min-height: 220px;
-    background: url(../images/Linkedin_icon.svg) no-repeat left center;
-    background-size: 210px 160px;
+    background: url(../images/LinkedIn_logo.png) no-repeat left center;
+    background-size: 210px 60px;
     padding: 0px 0px 0px 300px;
 }
 section.external_sites::after{
