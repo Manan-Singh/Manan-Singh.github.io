@@ -12,6 +12,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel = "stylesheet" type = "text/css" href = "css/layout.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/animate.css">
         
     </head>
     <body>
@@ -26,18 +27,18 @@ and open the template in the editor.
             <!-- The are of the page that contains info about me (shown as a jquery accordian) as well as an image -->
             <section class = "info">
                 <div class = "accordion">
-                    <h2>About Me</h2>
-                    <div class = "about_me">
+                    <h2 class = "wow slideInLeft">About Me</h2>
+                    <div class = "about_me wow slideInLeft">
                         <p>Hi, and welcome to the webpage of Manan Singh! I am currently a college student who plans on becoming a full
                         stack developer. On this page you'll find information on who I am and what I do. If you have any questions 
                         feel free to contact me using the contact information below.</p>
                     </div>
-                    <h2>Schooling</h2>
+                    <h2 class = "wow slideInRight">Schooling</h2>
                     <div class = "schooling">
                         <p>In 2014, I graduated Deer Park High School in Suffolk County New York. I currently attend Stony Brook University
                         and am pursuing a bachelors degree in Computer Science. My expected graduation date is in May of 2018.</p>
                     </div>
-                    <h2>Hobbies</h2>
+                    <h2 class = "wow slideInLeft">Hobbies</h2>
                     <div class = "hobbies">
                         <p>I have a variety of hobbies that I like to keep up with. Sometimes I'm sketching. Sometimes I'm playing badminton.
                         However I suppose my favorite hobbies include playing strategy games. I love chess, and recently I've also been 
@@ -49,10 +50,10 @@ and open the template in the editor.
             </section>
             
             <!-- The area of the page that contains links to external sites (Github and LinkedIn) as well as some text -->
-            <section class = "external_sites">
+            <section class = "external_sites wow fadeIn">
                 <h2>Find me on... </h2>
                 
-                <div class = "github">
+                <div class = "github wow slideInLeft">
                     <h3>Github</h3>
                     <p>Most, if not all, my projects can be found on github. If you would like to snoop around and see some of them
                     click the link and it'll take you to my github page. Here you'll find everything from course schedulers to 
@@ -60,7 +61,7 @@ and open the template in the editor.
                     <a class = "btnLink" href = "#">Go to github</a>
                 </div>
                 
-                <div class = "linkedIn">
+                <div class = "linkedIn wow slideInRight">
                     <h3>LinkedIn</h3>
                     <p>My LinkedIn profile is still somewhat in its infant stages however if you would like to view it I have included
                     a link. It functions as my online resume however I may or may not change this later and simply include a link to 
@@ -71,7 +72,7 @@ and open the template in the editor.
             </section>
             
             <!-- The area of the page that contains the contact info -->
-            <section class = "contact">
+            <section class = "contact wow slideInLeft">
                 <div class = "contact_info">
                     <h2>Contact</h2>
                     <p>Name: Manan Singh</p>
@@ -82,14 +83,16 @@ and open the template in the editor.
             </section>
             
             <!-- The area of the page that contains the footer information such as copyright -->
-            <footer>
+            <footer class = "wow slideInRight">
                 &copy Manan Singh
             </footer>
             
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
             <script type = "text/javascript">
                 $(".accordion").accordion();
+                new WOW().init();
             </script>
             
         </div>
