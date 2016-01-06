@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <title>Manan Singh</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel = "stylesheet" type = "text/css" href = "css/layout.css">
+        
+    </head>
+    <body>
+        <div id = "page">
+            
+            <!-- The area of the page that contains the background image and text -->
+            <header>
+                <h3 class = "logo_text"><em>Manan Singh</em></h3>
+                <blockquote><em>"Software is a great combination between artistry and engineering" - Bill Gates</em></blockquote>
+            </header>
+            
+            <!-- The are of the page that contains info about me (shown as a jquery accordian) as well as an image -->
+            <section class = "info">
+                <div class = "accordion">
+                    <h2>About Me</h2>
+                    <div class = "about_me">
+                        <p>Hi, and welcome to the webpage of Manan Singh! I am currently a college student who plans on becoming a full
+                        stack developer. On this page you'll find information on who I am and what I do. If you have any questions 
+                        feel free to contact me using the contact information below.</p>
+                    </div>
+                    <h2>Schooling</h2>
+                    <div class = "schooling">
+                        <p>In 2014, I graduated Deer Park High School in Suffolk County New York. I currently attend Stony Brook University
+                        and am pursuing a bachelors degree in Computer Science. My expected graduation date is in May of 2018.</p>
+                    </div>
+                    <h2>Hobbies</h2>
+                    <div class = "hobbies">
+                        <p>I have a variety of hobbies that I like to keep up with. Sometimes I'm sketching. Sometimes I'm playing badminton.
+                        However I suppose my favorite hobbies include playing strategy games. I love chess, and recently I've also been 
+                        playing a lot of go/baduk. Of course video games are another favorite of mine, especially puzzle games.</p>
+                    </div>
+                    
+                    <img class = "self_img">
+                </div>
+            </section>
+            
+            <!-- The area of the page that contains links to external sites (Github and LinkedIn) as well as some text -->
+            <section class = "external_sites">
+                <h2>Find me on... </h2>
+                
+                <div class = "github">
+                    <h3>Github</h3>
+                    <p>Most, if not all, my projects can be found on github. If you would like to snoop around and see some of them
+                    click the link and it'll take you to my github page. Here you'll find everything from course schedulers to 
+                    website makers!</p>
+                    <a class = "btnLink" href = "#">Go to github</a>
+                </div>
+                
+                <div class = "linkedIn">
+                    <h3>LinkedIn</h3>
+                    <p>My LinkedIn profile is still somewhat in its infant stages however if you would like to view it I have included
+                    a link. It functions as my online resume however I may or may not change this later and simply include a link to 
+                    a public google docs link instead. </p>
+                    <a class = "btnLink" href = "#">Go to LinkedIn</a>
+                    <a class = "btnLink" href = "#">View public resume</a>
+                </div>
+            </section>
+            
+            <!-- The area of the page that contains the contact info -->
+            <section class = "contact">
+                <div class = "contact_info">
+                    <h2>Contact</h2>
+                    <p>Name: Manan Singh</p>
+                    <p>Emails: manan.singh@stonybrook.edu or manan.shine@gmail.com</p>
+                </div>
+                
+                
+            </section>
+            
+            <!-- The area of the page that contains the footer information such as copyright -->
+            <footer>
+                &copy Manan Singh
+            </footer>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <script type = "text/javascript">
+                $(".accordion").accordion();
+            </script>
+            
+        </div>
+    </body>
+</html>

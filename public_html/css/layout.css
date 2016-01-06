@@ -1,0 +1,129 @@
+/* 
+    Created on : Jan 4, 2016, 4:06:54 PM
+    Author     : Manan Singh
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+    font-family: 'Open sans', sans-serif;
+    font-size: 22px;
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+#page{
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Text */
+
+h2{
+    margin: 0 0 .5em 0;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+h3{
+    margin: 0 0 .4em 0;
+    font-weight: 600;
+}
+
+p{
+    margin: 0 0 1em 0;
+}
+
+a{
+    color: purple;
+}
+
+a.btnLink{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 4px 15px;
+    /* For transitioning color when hovering */
+    transition: background-color .5s;
+}
+a.btnLink:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+/* Header */
+header{
+    height: 625px;
+    background:  url(../images/banner_1300.jpeg) no-repeat center bottom;
+    position: relative;
+}
+header h3{
+    color: #fff;
+    font-size: .9em;
+    padding: 5px 0px 0px 10px;
+}
+header blockquote{
+    color: #fff;
+    font-size: 2.3em;
+    position: absolute;
+    top: 120px;
+}
+
+/* Section */
+section{
+    /* This is used because it will allow us to move down elements using margin-top, however, now you must call padding: 0 on every element after this */
+    padding: 0 30px;
+}
+
+/* Section - Info */
+section.info{
+    margin-top: 50px;
+    color: #339;
+}
+section.info .accordion > h2:hover{
+    text-decoration: underline;
+}
+section.info img{
+    width: 40%;
+    max-height: 300px;
+}
+section.info::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Section - External_Sites */
+section.external_sites{
+    margin-top: 30px;
+    background-color: #339;
+    color: #fff;
+}
+section.external_sites .github{
+    min-height: 220px;
+    background: url(../images/GitHub_Logo.png) no-repeat left center;
+    background-size: 210px 160px;
+    padding: 0px 0px 0px 300px;
+}
+section.external_sites .linkedIn{
+    margin-top: 50px;
+    min-height: 220px;
+    background: url(../images/Linkedin_icon.svg) no-repeat left center;
+    background-size: 210px 160px;
+    padding: 0px 0px 0px 300px;
+}
+section.external_sites::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Section - Contact */
+section.contact{
+    background-color: #00001a;
+    color: #fff;
+}
+
+/* Footer */
