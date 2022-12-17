@@ -1,2 +1,3 @@
 # Manan-Singh.github.io
-A personal website that I'm using for now
+
+This is the personal website of Manan Singh.
